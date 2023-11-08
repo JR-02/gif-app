@@ -1,0 +1,142 @@
+.container-body {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.formulario-buscar {
+  display: flex;
+  place-items: center;
+  grid-area: Buscador;
+}
+
+.input-buscar {
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 10px 0px 0px 10px;
+  padding: 6px 10px;
+  width: 300px;
+}
+
+.btn-buscar {
+  border-radius: 0px 10px 10px 0px;
+  border: 2px solid transparent;
+  padding: 6px 10px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  fill: white;
+}
+
+.BackdropModal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0 0 0 / 0.4);
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
+
+.ModalGif {
+  position: fixed;
+  z-index: 10;
+  display: grid;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.6992px);
+  -webkit-backdrop-filter: blur(8.6992px);
+  border: 1px solid rgba(255, 255, 255, 0.363);
+  gap: 10px;
+  grid-template-areas:
+    'img'
+    'div'
+    'download';
+}
+
+.ModalGif img {
+  display: block;
+  max-width: 500px;
+  min-width: 300px;
+  width: 100%;
+  border-radius: 4px;
+  grid-area: img;
+}
+
+.ModalGif div {
+  display: grid;
+  grid-area: div;
+  grid-template-columns: 1fr auto;
+}
+
+.ModalGif h3 {
+  display: box;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+  line-height: 36px;
+  /* padding: 0 .375rem; */
+  text-transform: capitalize;
+}
+
+.ModalGif button {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 9.6px 9.6px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: 50px;
+  fill: white;
+}
+
+.ModalGif button svg {
+  width: 20px;
+  height: 20px;
+  transition: fill 0.25s;
+}
+
+.ModalGif button:hover {
+  border-color: rgb(249, 24, 128);
+  fill: rgb(249, 24, 128);
+}
+
+.ModalGif .ModalGifDownloand {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 9.6px 19.2px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  grid-area: download;
+  width: 100%;
+}
+.ModalGif .ModalGifDownloand:hover {
+  border-color: rgb(0, 153, 255);
+}
+.ModalGif .ModalGifDownloand:focus,
+.ModalGif .ModalGifDownloand:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
